@@ -1,5 +1,7 @@
 1) Bydefault when we fire SVN command then it will create your project folder
-```	svn checkout https://www.domain.com/svn/xyz_project/
+
+```	
+svn checkout https://www.domain.com/svn/xyz_project/
 ```
 2) Check your folder created or not, if yes then OK else need to check with admin or SVN link provider
  Put whatever your project content inside created project
