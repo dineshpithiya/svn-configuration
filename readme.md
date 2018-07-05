@@ -44,3 +44,13 @@ rm -rf `find . -type d -name .svn
 ```
 for /r %R in (.svn) do if exist %R (rd /s /q "%R")
 ```
+
+> to check out in your global server
+```
+git svn init --prefix=svn/ --username='user' --no-metadata --no-minimize-url --trunk='trunk' --tags='tags' --branches='branches' http://www.domain.com/xyz
+```
+> OR
+```
+svn co --username='xxx' --password xxxxx http://www.domain.com/xyz
+```
+Get more help [Click](https://stat.ethz.ch/pipermail/bioc-devel/2016-May/009224.html)
