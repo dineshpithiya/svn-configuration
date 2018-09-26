@@ -71,18 +71,24 @@ svn checkout https://svn.domain.com/svn/www.domain.com/ .
 Note:- This is required only first time. second time you need to just follow below steps
 
 ## developer.domain.com
-1) svn add * or svn add --force .
-2) svn commit -m "Version"
+```
+svn add * or svn add --force .
+svn commit -m "Version"
+```
 3) Verify you data into the SVN folder https://svn.domain.com/svn/www.domain.com/
 
 To update content into svn - just follow two commands
-1) svn add * or svn add --force .
-2) svn commit -m "Version"
+```
+svn add * or svn add --force .
+svn commit -m "Version"
+```
 3) Verify you data into the SVN folder https://svn.domain.com/svn/www.domain.com/
 
 ## client.domain.com or www.domain.com. Now deploy or upload source code into the client or public server
-1) svn update
-2) Fix conflict and after update again if still return error then perform below command
+```
+svn update
+```
+> Now Fix conflict and after update again if still return error then perform below command
 ```
 svn remove --force filename
 svn resolve --accept=working  filename
