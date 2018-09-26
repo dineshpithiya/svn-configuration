@@ -1,7 +1,19 @@
+# SVN folder structure
+
+Main SVN directory:- 
+	www.domain.com
+		1) 	branches
+			> v1, v2....v2
+			> Add version vise development and according create new folders	
+		2) 	tags
+			> End of every version v1,v2 or v2 - just mension tag related new features implemented in brances
+		3)	trunk
+			> Trunk: The main development area. This is where your next major release of the code lives, and generally has all the newest features.
+
 1) Bydefault when we fire SVN command then it will create your project folder
 
 ```	
-svn checkout https://www.domain.com/svn/xyz_project/
+svn checkout https://www.domain.com/svn/xyz_project/ .
 ```
 2) Check your folder created or not, if yes then OK else need to check with admin or SVN link provider
  Put whatever your project content inside created project
@@ -94,3 +106,5 @@ svn remove --force filename
 svn resolve --accept=working  filename
 svn commit
 ```
+> To ignore file
+svn propset svn:ignore '*' .
