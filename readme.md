@@ -83,6 +83,8 @@ To update content into svn - just follow two commands
 ## client.domain.com or www.domain.com. Now deploy or upload source code into the client or public server
 1) svn update
 2) Fix conflict and after update again if still return error then perform below command
-	svn remove --force filename
-	svn resolve --accept=working  filename
-	svn commit
+```
+svn remove --force filename
+svn resolve --accept=working  filename
+svn commit
+```
